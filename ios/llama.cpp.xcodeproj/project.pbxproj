@@ -1,0 +1,2772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		46B33075E720442DB072AEA8 /* BUILD_INFO */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1B654A2E461B4846B685E80D /* Build configuration list for PBXAggregateTarget "BUILD_INFO" */;
+			buildPhases = (
+				012CA932E3C06DD409859D07 /* Generate ../build-info.h */,
+				78FBDB1EED3B6BA7925DC15E /* Generate CMakeFiles/BUILD_INFO */,
+			);
+			dependencies = (
+				23E12B8CE60842BC8ABE7069 /* PBXTargetDependency */,
+			);
+			name = BUILD_INFO;
+			productName = BUILD_INFO;
+		};
+		741074F464C84A648735780A /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 797A70ACAA5E4D6C95DAF732 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				D939F094D89B4D769045DE90 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		CE3ECBF67F8E44ACB858719B /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BBA6113A051D45E5812BDF0D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				ED909E0E2D208DC31CCD5D07 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		CF24FD798352474EAC55C0B7 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0F3B3BDDBD174C768FA1E457 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				E57988A6D8A051126ADD98E9 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				9A5F96E843864CFBB2A09653 /* PBXTargetDependency */,
+				2A4C46C0BB0E44578ED3A92A /* PBXTargetDependency */,
+				D66BB953CD7B48628091DFB0 /* PBXTargetDependency */,
+				AB48132CA8E940A3910B28B5 /* PBXTargetDependency */,
+				3851F45D02D74C25A2BB67CA /* PBXTargetDependency */,
+				A72A0FE1DA364790A38F6429 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1EC7F525B2734E7AA211F84F /* ggml-alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 38A0A0C607BF43A2A4F18E9D /* ggml-alloc.c */; };
+		2956EB531E3048DF90833EB3 /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2750DAE4F1F64B4E936AAF80 /* common.cpp */; };
+		2E18F35CF651402FBB40E743 /* ggml.c in Sources */ = {isa = PBXBuildFile; fileRef = D413A1EBF9F843449DCE0016 /* ggml.c */; };
+		3C3CC81CFC1240A3ACBC5653 /* ggml-quants.c in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0D58E323B445CAACD409F /* ggml-quants.c */; };
+		6397A43E89C24F5A8A376D16 /* llama.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA3077B3FD894FE2851F4104 /* llama.cpp */; };
+		63E8365C2AEF60F8008EF2E2 /* llamaFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 63E8365B2AEF60F8008EF2E2 /* llamaFramework.docc */; };
+		63E8365D2AEF60F8008EF2E2 /* llamaFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E8365A2AEF60F8008EF2E2 /* llamaFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E8366B2AEF627F008EF2E2 /* ggml-alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 38A0A0C607BF43A2A4F18E9D /* ggml-alloc.c */; };
+		63E8366C2AEF627F008EF2E2 /* ggml-backend.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A48071CE30B4C0DA05F1125 /* ggml-backend.c */; };
+		63E8366D2AEF627F008EF2E2 /* ggml-metal.m in Sources */ = {isa = PBXBuildFile; fileRef = 822C35311240446EAF3BDDE1 /* ggml-metal.m */; };
+		63E8366E2AEF627F008EF2E2 /* ggml-quants.c in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0D58E323B445CAACD409F /* ggml-quants.c */; };
+		63E8366F2AEF627F008EF2E2 /* ggml.c in Sources */ = {isa = PBXBuildFile; fileRef = D413A1EBF9F843449DCE0016 /* ggml.c */; };
+		63E836702AEF628D008EF2E2 /* llama.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA3077B3FD894FE2851F4104 /* llama.cpp */; };
+		63E836712AEF629B008EF2E2 /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2750DAE4F1F64B4E936AAF80 /* common.cpp */; };
+		63E836722AEF629B008EF2E2 /* console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52B7AD0B5E4440F6BF3E5C08 /* console.cpp */; };
+		63E836732AEF629B008EF2E2 /* grammar-parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29969D434A494A8BBDEAB7B0 /* grammar-parser.cpp */; };
+		63E836742AEF629B008EF2E2 /* sampling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B339537782DA48F9B6BFAAAA /* sampling.cpp */; };
+		63E836752AEF629B008EF2E2 /* train.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 179AD1112E7742A293B41D44 /* train.cpp */; };
+		63E836772AEF6351008EF2E2 /* build-info.h in Sources */ = {isa = PBXBuildFile; fileRef = 63E836762AEF6351008EF2E2 /* build-info.h */; };
+		6D846C943B9B4EA49071D129 /* console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52B7AD0B5E4440F6BF3E5C08 /* console.cpp */; };
+		77CD2D3E099E44349BECDFDB /* ggml-backend.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A48071CE30B4C0DA05F1125 /* ggml-backend.c */; };
+		AFC75CA58C414B5AB0581165 /* sampling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B339537782DA48F9B6BFAAAA /* sampling.cpp */; };
+		B306AB6F538B4178A93FD1E9 /* train.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 179AD1112E7742A293B41D44 /* train.cpp */; };
+		C94D4D516647468A89B60901 /* grammar-parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29969D434A494A8BBDEAB7B0 /* grammar-parser.cpp */; };
+		EC4ECDFD5EC54AF3BB9CF9E5 /* ggml-metal.m in Sources */ = {isa = PBXBuildFile; fileRef = 822C35311240446EAF3BDDE1 /* ggml-metal.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AE5BD2BAA68460E8C7E9295 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3ECBF67F8E44ACB858719B;
+			remoteInfo = ZERO_CHECK;
+		};
+		4A3EA074EB9944E583AE2C50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF24FD798352474EAC55C0B7;
+			remoteInfo = ALL_BUILD;
+		};
+		4BAD629D8E684BD69A241CE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFCB450869CE431B96CD0497;
+			remoteInfo = ggml;
+		};
+		66226E612F04487999B58AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFCB450869CE431B96CD0497;
+			remoteInfo = ggml;
+		};
+		7AB7E55B3D68475485074123 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3ECBF67F8E44ACB858719B;
+			remoteInfo = ZERO_CHECK;
+		};
+		7F95C77600614B158EBF02F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6F5C87AD9664DE194D8E00B;
+			remoteInfo = common;
+		};
+		87ADA32341074AC2B11FCEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3ECBF67F8E44ACB858719B;
+			remoteInfo = ZERO_CHECK;
+		};
+		9C662E3AA6B94DEB9C8C5792 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3ECBF67F8E44ACB858719B;
+			remoteInfo = ZERO_CHECK;
+		};
+		B05CA44051914E5FA87F0173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B828B0066B6C4D32B451F50F;
+			remoteInfo = ggml_static;
+		};
+		B23DE0E8367F498BA51E1FCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C5ED0C17EE246C989ED683F;
+			remoteInfo = llama;
+		};
+		B925C582A405470389B327DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3ECBF67F8E44ACB858719B;
+			remoteInfo = ZERO_CHECK;
+		};
+		BFEA7E9C2ACD44BC81D0AC20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3ECBF67F8E44ACB858719B;
+			remoteInfo = ZERO_CHECK;
+		};
+		D56D3CC1B5F849B88E6DB421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFCB450869CE431B96CD0497;
+			remoteInfo = ggml;
+		};
+		E7FC0823DE3C4029993405F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFCB450869CE431B96CD0497;
+			remoteInfo = ggml;
+		};
+		F26AF59AC3714C15B71FA9A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46B33075E720442DB072AEA8;
+			remoteInfo = BUILD_INFO;
+		};
+		F4443D86E6AF4353BA9D8396 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C5ED0C17EE246C989ED683F;
+			remoteInfo = llama;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		077C64D103D24C6D8735FA1F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		179AD1112E7742A293B41D44 /* train.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = train.cpp; path = common/train.cpp; sourceTree = SOURCE_ROOT; };
+		1A6B062FD0E84114B2F2E3A3 /* train.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = train.h; path = common/train.h; sourceTree = SOURCE_ROOT; };
+		1CE0D58E323B445CAACD409F /* ggml-quants.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = "ggml-quants.c"; sourceTree = SOURCE_ROOT; };
+		2084EE4ACBC14BD282E25D0E /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = ios/CMakeFiles/ggml_static.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		21EE517A505C47D3B5892B4C /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = ios/common/CMakeFiles/common.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		2750DAE4F1F64B4E936AAF80 /* common.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = common.cpp; path = common/common.cpp; sourceTree = SOURCE_ROOT; };
+		29969D434A494A8BBDEAB7B0 /* grammar-parser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "grammar-parser.cpp"; path = "common/grammar-parser.cpp"; sourceTree = SOURCE_ROOT; };
+		2B1BD375DA2B4F7CA351C448 /* grammar-parser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "grammar-parser.h"; path = "common/grammar-parser.h"; sourceTree = SOURCE_ROOT; };
+		2F74E5E4D2C746859B0A1E1F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = common/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3674C97ADD294747862F0D6F /* sampling.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sampling.h; path = common/sampling.h; sourceTree = SOURCE_ROOT; };
+		38A0A0C607BF43A2A4F18E9D /* ggml-alloc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = "ggml-alloc.c"; sourceTree = SOURCE_ROOT; };
+		52B7AD0B5E4440F6BF3E5C08 /* console.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = console.cpp; path = common/console.cpp; sourceTree = SOURCE_ROOT; };
+		5C44BE8CD78E40A59EC8565D /* ggml-metal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = "ggml-metal.h"; sourceTree = SOURCE_ROOT; };
+		63E836582AEF60F8008EF2E2 /* llamaFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = llamaFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E8365A2AEF60F8008EF2E2 /* llamaFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = llamaFramework.h; sourceTree = "<group>"; };
+		63E8365B2AEF60F8008EF2E2 /* llamaFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = llamaFramework.docc; sourceTree = "<group>"; };
+		63E836762AEF6351008EF2E2 /* build-info.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "build-info.h"; sourceTree = "<group>"; };
+		681A6A01B6CF4646AC97B51A /* common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = common.h; path = common/common.h; sourceTree = SOURCE_ROOT; };
+		730D581BAD0F4D49A90B8A7D /* ggml-alloc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = "ggml-alloc.h"; sourceTree = SOURCE_ROOT; };
+		738B7AFA7D65440F96E5ECF1 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		749C03A2287E40E59744B795 /* ggml-backend.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = "ggml-backend.h"; sourceTree = SOURCE_ROOT; };
+		822C35311240446EAF3BDDE1 /* ggml-metal.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = "ggml-metal.m"; sourceTree = SOURCE_ROOT; };
+		82BC455C23404F0FA2D9087E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8A48071CE30B4C0DA05F1125 /* ggml-backend.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = "ggml-backend.c"; sourceTree = SOURCE_ROOT; };
+		B339537782DA48F9B6BFAAAA /* sampling.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sampling.cpp; path = common/sampling.cpp; sourceTree = SOURCE_ROOT; };
+		BA3077B3FD894FE2851F4104 /* llama.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = llama.cpp; sourceTree = SOURCE_ROOT; };
+		BA65B5A4C92344ABBA64F425 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = ios/CMakeFiles/ggml.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		C35CCDB0EF9E410C97964FF5 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = ios/CMakeFiles/llama.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		C5B1FE9A94994EC68E11A1D0 /* console.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = console.h; path = common/console.h; sourceTree = SOURCE_ROOT; };
+		CD78841C73484336982D7DCA /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D0F8C41F1D15429CA01D88BA /* ggml-quants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = "ggml-quants.h"; sourceTree = SOURCE_ROOT; };
+		D413A1EBF9F843449DCE0016 /* ggml.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = ggml.c; sourceTree = SOURCE_ROOT; };
+		DC0D68A9C0D64D65BCB86539 /* libllama.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libllama.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB3AA5E01E741CD828F1BBD /* libggml_static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libggml_static.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63AE86EE84D4A5589BD00AF /* ggml.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = ggml.h; sourceTree = SOURCE_ROOT; };
+		EABDE08286CE4AF58DA81D35 /* libcommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A2442433314A488DBD11CE /* llama.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = llama.h; sourceTree = SOURCE_ROOT; };
+		FBC9C92F54B3428E978B324E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FD43AA61C89F42B1948A894A /* libggml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libggml.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2817D436DE534ED3B73C3B0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53406AFD69B54EB691C96DC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E836552AEF60F8008EF2E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D3664864CD4540B9BC3E96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8295BD156D9E411994EFE2A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06AEA4DF5D604EEC8CABC895 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2750DAE4F1F64B4E936AAF80 /* common.cpp */,
+				52B7AD0B5E4440F6BF3E5C08 /* console.cpp */,
+				29969D434A494A8BBDEAB7B0 /* grammar-parser.cpp */,
+				B339537782DA48F9B6BFAAAA /* sampling.cpp */,
+				179AD1112E7742A293B41D44 /* train.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		082CB4765F284F8C96833E64 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				28E8430325CD43C58A8C0DCF /* Header Files */,
+				06AEA4DF5D604EEC8CABC895 /* Source Files */,
+				45D9574606CD4DC6A4999C9E /* Resources */,
+				2F74E5E4D2C746859B0A1E1F /* CMakeLists.txt */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		1C34E7795E28466F85CA7017 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		1D2ED7626108414DBF44A494 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2084EE4ACBC14BD282E25D0E /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		28E8430325CD43C58A8C0DCF /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				681A6A01B6CF4646AC97B51A /* common.h */,
+				C5B1FE9A94994EC68E11A1D0 /* console.h */,
+				2B1BD375DA2B4F7CA351C448 /* grammar-parser.h */,
+				3674C97ADD294747862F0D6F /* sampling.h */,
+				1A6B062FD0E84114B2F2E3A3 /* train.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		355CF05BEB614A76A6CD42FC /* BUILD_INFO */ = {
+			isa = PBXGroup;
+			children = (
+				1C34E7795E28466F85CA7017 /* CMake Rules */,
+				CD78841C73484336982D7DCA /* CMakeLists.txt */,
+			);
+			name = BUILD_INFO;
+			sourceTree = "<group>";
+		};
+		395BE4DDC2F54A94A88F4841 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				730D581BAD0F4D49A90B8A7D /* ggml-alloc.h */,
+				749C03A2287E40E59744B795 /* ggml-backend.h */,
+				5C44BE8CD78E40A59EC8565D /* ggml-metal.h */,
+				D0F8C41F1D15429CA01D88BA /* ggml-quants.h */,
+				E63AE86EE84D4A5589BD00AF /* ggml.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		44AD76B7D00A413EA8031B7E /* llama */ = {
+			isa = PBXGroup;
+			children = (
+				C86DB61D53D6463DA84D9EA6 /* Source Files */,
+				D1ED4F4D6A644E10A0AE73C3 /* Header Files */,
+				C32D14B8BC73439781F9C40F /* Resources */,
+				FBC9C92F54B3428E978B324E /* CMakeLists.txt */,
+			);
+			name = llama;
+			sourceTree = "<group>";
+		};
+		45D9574606CD4DC6A4999C9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				21EE517A505C47D3B5892B4C /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5D28076268D040758252E482 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				38A0A0C607BF43A2A4F18E9D /* ggml-alloc.c */,
+				8A48071CE30B4C0DA05F1125 /* ggml-backend.c */,
+				822C35311240446EAF3BDDE1 /* ggml-metal.m */,
+				1CE0D58E323B445CAACD409F /* ggml-quants.c */,
+				D413A1EBF9F843449DCE0016 /* ggml.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		63E836592AEF60F8008EF2E2 /* llamaFramework */ = {
+			isa = PBXGroup;
+			children = (
+				63E8365A2AEF60F8008EF2E2 /* llamaFramework.h */,
+				63E8365B2AEF60F8008EF2E2 /* llamaFramework.docc */,
+			);
+			name = llamaFramework;
+			path = ios/llamaFramework;
+			sourceTree = "<group>";
+		};
+		65C05AAAD8DA4E7AAEFE027F = {
+			isa = PBXGroup;
+			children = (
+				63E836762AEF6351008EF2E2 /* build-info.h */,
+				355CF05BEB614A76A6CD42FC /* BUILD_INFO */,
+				BC312DDF6F424865828EC085 /* ggml */,
+				F593DAF608AD47069C193582 /* ggml_static */,
+				44AD76B7D00A413EA8031B7E /* llama */,
+				7F18C2DE80564A77B4F9DC0C /* ALL_BUILD */,
+				082CB4765F284F8C96833E64 /* common */,
+				63E836592AEF60F8008EF2E2 /* llamaFramework */,
+				D5B6330886AD410084E617BF /* Products */,
+				BBA07B676357482BA636A9C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79C66AF0B142413E8D5524EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA65B5A4C92344ABBA64F425 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7F18C2DE80564A77B4F9DC0C /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				F1620CE14CA64A20A74E7653 /* CMake Rules */,
+				82BC455C23404F0FA2D9087E /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		BBA07B676357482BA636A9C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC312DDF6F424865828EC085 /* ggml */ = {
+			isa = PBXGroup;
+			children = (
+				5D28076268D040758252E482 /* Source Files */,
+				395BE4DDC2F54A94A88F4841 /* Header Files */,
+				79C66AF0B142413E8D5524EC /* Resources */,
+				077C64D103D24C6D8735FA1F /* CMakeLists.txt */,
+			);
+			name = ggml;
+			sourceTree = "<group>";
+		};
+		C32D14B8BC73439781F9C40F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C35CCDB0EF9E410C97964FF5 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C86DB61D53D6463DA84D9EA6 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA3077B3FD894FE2851F4104 /* llama.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D1ED4F4D6A644E10A0AE73C3 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3A2442433314A488DBD11CE /* llama.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		D5B6330886AD410084E617BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EABDE08286CE4AF58DA81D35 /* libcommon.a */,
+				FD43AA61C89F42B1948A894A /* libggml.a */,
+				DEB3AA5E01E741CD828F1BBD /* libggml_static.a */,
+				DC0D68A9C0D64D65BCB86539 /* libllama.a */,
+				63E836582AEF60F8008EF2E2 /* llamaFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1620CE14CA64A20A74E7653 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F593DAF608AD47069C193582 /* ggml_static */ = {
+			isa = PBXGroup;
+			children = (
+				1D2ED7626108414DBF44A494 /* Resources */,
+				738B7AFA7D65440F96E5ECF1 /* CMakeLists.txt */,
+			);
+			name = ggml_static;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		63E836532AEF60F8008EF2E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E8365D2AEF60F8008EF2E2 /* llamaFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		63E836572AEF60F8008EF2E2 /* llamaFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E836622AEF60F8008EF2E2 /* Build configuration list for PBXNativeTarget "llamaFramework" */;
+			buildPhases = (
+				63E836532AEF60F8008EF2E2 /* Headers */,
+				63E836542AEF60F8008EF2E2 /* Sources */,
+				63E836552AEF60F8008EF2E2 /* Frameworks */,
+				63E836562AEF60F8008EF2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = llamaFramework;
+			productName = llamaFramework;
+			productReference = 63E836582AEF60F8008EF2E2 /* llamaFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C5ED0C17EE246C989ED683F /* llama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4786EE56111B4F79B33417EB /* Build configuration list for PBXNativeTarget "llama" */;
+			buildPhases = (
+				47F7B89F4ACE49099779B53F /* Sources */,
+				80D3664864CD4540B9BC3E96 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44143B8982B24E86BB02A777 /* PBXTargetDependency */,
+				6DB2C5E9555E45378617CCFA /* PBXTargetDependency */,
+			);
+			name = llama;
+			productName = llama;
+			productReference = DC0D68A9C0D64D65BCB86539 /* libllama.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B6F5C87AD9664DE194D8E00B /* common */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B67267D468941EC8CC77607 /* Build configuration list for PBXNativeTarget "common" */;
+			buildPhases = (
+				BCFF28DFC1874076A7DF1FF5 /* Sources */,
+				53406AFD69B54EB691C96DC3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB8DE3DD084D41FB892FC44B /* PBXTargetDependency */,
+				CA9170AFB9354AF5AE9772AE /* PBXTargetDependency */,
+				0C199118267243DFBC4E9E32 /* PBXTargetDependency */,
+			);
+			name = common;
+			productName = common;
+			productReference = EABDE08286CE4AF58DA81D35 /* libcommon.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B828B0066B6C4D32B451F50F /* ggml_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3D1845DE8074924AB3E6D2D /* Build configuration list for PBXNativeTarget "ggml_static" */;
+			buildPhases = (
+				2817D436DE534ED3B73C3B0D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB0419DBB52D482DB4E4B8B6 /* PBXTargetDependency */,
+				0960E11556474089828953EA /* PBXTargetDependency */,
+			);
+			name = ggml_static;
+			productName = ggml_static;
+			productReference = DEB3AA5E01E741CD828F1BBD /* libggml_static.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EFCB450869CE431B96CD0497 /* ggml */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E76ADD81790E40D9B57CA549 /* Build configuration list for PBXNativeTarget "ggml" */;
+			buildPhases = (
+				5ED6C7756E554AC3B34F9663 /* Sources */,
+				8295BD156D9E411994EFE2A2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				894C20A0761A48A1B6D2830D /* PBXTargetDependency */,
+			);
+			name = ggml;
+			productName = ggml;
+			productReference = FD43AA61C89F42B1948A894A /* libggml.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9D745DDDF744CD0A5416BA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					63E836572AEF60F8008EF2E2 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F72E2A2864274BB5A5D839EF /* Build configuration list for PBXProject "llama.cpp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65C05AAAD8DA4E7AAEFE027F;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				CF24FD798352474EAC55C0B7 /* ALL_BUILD */,
+				46B33075E720442DB072AEA8 /* BUILD_INFO */,
+				CE3ECBF67F8E44ACB858719B /* ZERO_CHECK */,
+				B6F5C87AD9664DE194D8E00B /* common */,
+				EFCB450869CE431B96CD0497 /* ggml */,
+				B828B0066B6C4D32B451F50F /* ggml_static */,
+				741074F464C84A648735780A /* install */,
+				8C5ED0C17EE246C989ED683F /* llama */,
+				63E836572AEF60F8008EF2E2 /* llamaFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63E836562AEF60F8008EF2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		012CA932E3C06DD409859D07 /* Generate ../build-info.h */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				/Users/david/Project/llamaFramework/llama.cppSrc/.git/index,
+			);
+			name = "Generate ../build-info.h";
+			outputPaths = (
+				"/Users/david/Project/llamaFramework/llama.cppSrc/build-info.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc\n  /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -DMSVC= -DCMAKE_C_COMPILER_VERSION=15.0.0.15000040 -DCMAKE_C_COMPILER_ID=AppleClang -DCMAKE_VS_PLATFORM_NAME= -DCMAKE_C_COMPILER=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -P /Users/david/Project/llamaFramework/llama.cppSrc/scripts/build-info.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc\n  /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -DMSVC= -DCMAKE_C_COMPILER_VERSION=15.0.0.15000040 -DCMAKE_C_COMPILER_ID=AppleClang -DCMAKE_VS_PLATFORM_NAME= -DCMAKE_C_COMPILER=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -P /Users/david/Project/llamaFramework/llama.cppSrc/scripts/build-info.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc\n  /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -DMSVC= -DCMAKE_C_COMPILER_VERSION=15.0.0.15000040 -DCMAKE_C_COMPILER_ID=AppleClang -DCMAKE_VS_PLATFORM_NAME= -DCMAKE_C_COMPILER=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -P /Users/david/Project/llamaFramework/llama.cppSrc/scripts/build-info.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc\n  /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -DMSVC= -DCMAKE_C_COMPILER_VERSION=15.0.0.15000040 -DCMAKE_C_COMPILER_ID=AppleClang -DCMAKE_VS_PLATFORM_NAME= -DCMAKE_C_COMPILER=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -P /Users/david/Project/llamaFramework/llama.cppSrc/scripts/build-info.cmake\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		78FBDB1EED3B6BA7925DC15E /* Generate CMakeFiles/BUILD_INFO */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"/Users/david/Project/llamaFramework/llama.cppSrc/build-info.h",
+			);
+			name = "Generate CMakeFiles/BUILD_INFO";
+			outputPaths = (
+				/Users/david/Project/llamaFramework/llama.cppSrc/ios/CMakeFiles/BUILD_INFO,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\n  /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\n  /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\n  /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\n  /opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E57988A6D8A051126ADD98E9 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				/Users/david/Project/llamaFramework/llama.cppSrc/ios/CMakeFiles/ALL_BUILD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED909E0E2D208DC31CCD5D07 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				/Users/david/Project/llamaFramework/llama.cppSrc/ios/CMakeFiles/ZERO_CHECK,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\n  make -f /Users/david/Project/llamaFramework/llama.cppSrc/ios/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\n  make -f /Users/david/Project/llamaFramework/llama.cppSrc/ios/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\n  make -f /Users/david/Project/llamaFramework/llama.cppSrc/ios/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/david/Project/llamaFramework/llama.cppSrc/ios\n  make -f /Users/david/Project/llamaFramework/llama.cppSrc/ios/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47F7B89F4ACE49099779B53F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6397A43E89C24F5A8A376D16 /* llama.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ED6C7756E554AC3B34F9663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC7F525B2734E7AA211F84F /* ggml-alloc.c in Sources */,
+				77CD2D3E099E44349BECDFDB /* ggml-backend.c in Sources */,
+				EC4ECDFD5EC54AF3BB9CF9E5 /* ggml-metal.m in Sources */,
+				3C3CC81CFC1240A3ACBC5653 /* ggml-quants.c in Sources */,
+				2E18F35CF651402FBB40E743 /* ggml.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E836542AEF60F8008EF2E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E836772AEF6351008EF2E2 /* build-info.h in Sources */,
+				63E836712AEF629B008EF2E2 /* common.cpp in Sources */,
+				63E836722AEF629B008EF2E2 /* console.cpp in Sources */,
+				63E836732AEF629B008EF2E2 /* grammar-parser.cpp in Sources */,
+				63E836742AEF629B008EF2E2 /* sampling.cpp in Sources */,
+				63E836752AEF629B008EF2E2 /* train.cpp in Sources */,
+				63E836702AEF628D008EF2E2 /* llama.cpp in Sources */,
+				63E8366B2AEF627F008EF2E2 /* ggml-alloc.c in Sources */,
+				63E8366C2AEF627F008EF2E2 /* ggml-backend.c in Sources */,
+				63E8366D2AEF627F008EF2E2 /* ggml-metal.m in Sources */,
+				63E8366E2AEF627F008EF2E2 /* ggml-quants.c in Sources */,
+				63E8366F2AEF627F008EF2E2 /* ggml.c in Sources */,
+				63E8365C2AEF60F8008EF2E2 /* llamaFramework.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF28DFC1874076A7DF1FF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2956EB531E3048DF90833EB3 /* common.cpp in Sources */,
+				6D846C943B9B4EA49071D129 /* console.cpp in Sources */,
+				C94D4D516647468A89B60901 /* grammar-parser.cpp in Sources */,
+				AFC75CA58C414B5AB0581165 /* sampling.cpp in Sources */,
+				B306AB6F538B4178A93FD1E9 /* train.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0960E11556474089828953EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFCB450869CE431B96CD0497 /* ggml */;
+			targetProxy = E7FC0823DE3C4029993405F1 /* PBXContainerItemProxy */;
+		};
+		0C199118267243DFBC4E9E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C5ED0C17EE246C989ED683F /* llama */;
+			targetProxy = B23DE0E8367F498BA51E1FCB /* PBXContainerItemProxy */;
+		};
+		23E12B8CE60842BC8ABE7069 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3ECBF67F8E44ACB858719B /* ZERO_CHECK */;
+			targetProxy = B925C582A405470389B327DD /* PBXContainerItemProxy */;
+		};
+		2A4C46C0BB0E44578ED3A92A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46B33075E720442DB072AEA8 /* BUILD_INFO */;
+			targetProxy = F26AF59AC3714C15B71FA9A7 /* PBXContainerItemProxy */;
+		};
+		3851F45D02D74C25A2BB67CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C5ED0C17EE246C989ED683F /* llama */;
+			targetProxy = F4443D86E6AF4353BA9D8396 /* PBXContainerItemProxy */;
+		};
+		44143B8982B24E86BB02A777 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3ECBF67F8E44ACB858719B /* ZERO_CHECK */;
+			targetProxy = 1AE5BD2BAA68460E8C7E9295 /* PBXContainerItemProxy */;
+		};
+		6DB2C5E9555E45378617CCFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFCB450869CE431B96CD0497 /* ggml */;
+			targetProxy = 66226E612F04487999B58AA7 /* PBXContainerItemProxy */;
+		};
+		894C20A0761A48A1B6D2830D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3ECBF67F8E44ACB858719B /* ZERO_CHECK */;
+			targetProxy = 9C662E3AA6B94DEB9C8C5792 /* PBXContainerItemProxy */;
+		};
+		9A5F96E843864CFBB2A09653 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3ECBF67F8E44ACB858719B /* ZERO_CHECK */;
+			targetProxy = BFEA7E9C2ACD44BC81D0AC20 /* PBXContainerItemProxy */;
+		};
+		A72A0FE1DA364790A38F6429 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6F5C87AD9664DE194D8E00B /* common */;
+			targetProxy = 7F95C77600614B158EBF02F6 /* PBXContainerItemProxy */;
+		};
+		AB48132CA8E940A3910B28B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B828B0066B6C4D32B451F50F /* ggml_static */;
+			targetProxy = B05CA44051914E5FA87F0173 /* PBXContainerItemProxy */;
+		};
+		AB8DE3DD084D41FB892FC44B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3ECBF67F8E44ACB858719B /* ZERO_CHECK */;
+			targetProxy = 87ADA32341074AC2B11FCEC2 /* PBXContainerItemProxy */;
+		};
+		CA9170AFB9354AF5AE9772AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFCB450869CE431B96CD0497 /* ggml */;
+			targetProxy = 4BAD629D8E684BD69A241CE3 /* PBXContainerItemProxy */;
+		};
+		CB0419DBB52D482DB4E4B8B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3ECBF67F8E44ACB858719B /* ZERO_CHECK */;
+			targetProxy = 7AB7E55B3D68475485074123 /* PBXContainerItemProxy */;
+		};
+		D66BB953CD7B48628091DFB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFCB450869CE431B96CD0497 /* ggml */;
+			targetProxy = D56D3CC1B5F849B88E6DB421 /* PBXContainerItemProxy */;
+		};
+		D939F094D89B4D769045DE90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF24FD798352474EAC55C0B7 /* ALL_BUILD */;
+			targetProxy = 4A3EA074EB9944E583AE2C50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12E0579858324EAC897A649F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk;
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios/build;
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = Release;
+		};
+		2610C13DE4894354881EDB27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wpointer-arith",
+					"-Wmissing-prototypes",
+					"'-Werror=implicit-int'",
+					"'-Werror=implicit-function-declaration'",
+					"-Wdouble-promotion",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = " /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-alloc.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-backend.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-quants.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-metal.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ggml_static;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		2EA5B6004ACB4EC9A90F1710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wpointer-arith",
+					"-Wmissing-prototypes",
+					"'-Werror=implicit-int'",
+					"'-Werror=implicit-function-declaration'",
+					"-Wdouble-promotion",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = " /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-alloc.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-backend.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-quants.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-metal.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ggml_static;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		4171F298DC934E09A606FC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/david/Project/llamaFramework/llama.cppSrc/.,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wpointer-arith",
+					"-Wmissing-prototypes",
+					"'-Werror=implicit-int'",
+					"'-Werror=implicit-function-declaration'",
+					"-Wdouble-promotion",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wmissing-declarations",
+					"-Wmissing-noreturn",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"-Wmissing-prototypes",
+					"-Wextra-semi",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-alloc.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-backend.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-quants.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-metal.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = llama;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		4216F0ADE49B4B8CB007A54C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		453727EC4C8B43AD8DFDF25A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/david/Project/llamaFramework/llama.cppSrc/ios/common/llama.cpp.build/Release/common.build/;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/david/Project/llamaFramework/llama.cppSrc/common/.,
+					/Users/david/Project/llamaFramework/llama.cppSrc/.,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wmissing-declarations",
+					"-Wmissing-noreturn",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"-Wmissing-prototypes",
+					"-Wextra-semi",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = common;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		45F804B7ED14470D84F48F48 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/david/Project/llamaFramework/llama.cppSrc/ios/llama.cpp.build/RelWithDebInfo/ggml.build/;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/david/Project/llamaFramework/llama.cppSrc/.,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wpointer-arith",
+					"-Wmissing-prototypes",
+					"'-Werror=implicit-int'",
+					"'-Werror=implicit-function-declaration'",
+					"-Wdouble-promotion",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ggml;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		478AB6F252EE442099D920BA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		51527C9E97B94DBEA87617FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		63E8365E2AEF60F8008EF2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F5A9R6LVGQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.creataai.llamaFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63E8365F2AEF60F8008EF2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F5A9R6LVGQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.creataai.llamaFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63E836602AEF60F8008EF2E2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F5A9R6LVGQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.creataai.llamaFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = MinSizeRel;
+		};
+		63E836612AEF60F8008EF2E2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F5A9R6LVGQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.creataai.llamaFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = RelWithDebInfo;
+		};
+		651370F5F01144AEAFEA1848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		659DF0F0877E448AAF76C1CD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/david/Project/llamaFramework/llama.cppSrc/.,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wpointer-arith",
+					"-Wmissing-prototypes",
+					"'-Werror=implicit-int'",
+					"'-Werror=implicit-function-declaration'",
+					"-Wdouble-promotion",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wmissing-declarations",
+					"-Wmissing-noreturn",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"-Wmissing-prototypes",
+					"-Wextra-semi",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-alloc.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-backend.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-quants.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-metal.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = llama;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		67AE425DADAE4AF887054099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/david/Project/llamaFramework/llama.cppSrc/ios/llama.cpp.build/Release/ggml.build/;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/david/Project/llamaFramework/llama.cppSrc/.,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wpointer-arith",
+					"-Wmissing-prototypes",
+					"'-Werror=implicit-int'",
+					"'-Werror=implicit-function-declaration'",
+					"-Wdouble-promotion",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ggml;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		6A2DD216EE0843EF82D32076 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = BUILD_INFO;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		7E748218D1C543139B1B5314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/david/Project/llamaFramework/llama.cppSrc/ios/common/llama.cpp.build/Debug/common.build/;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/david/Project/llamaFramework/llama.cppSrc/common/.,
+					/Users/david/Project/llamaFramework/llama.cppSrc/.,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wmissing-declarations",
+					"-Wmissing-noreturn",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"-Wmissing-prototypes",
+					"-Wextra-semi",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = common;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		834C348E978845589716641A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wpointer-arith",
+					"-Wmissing-prototypes",
+					"'-Werror=implicit-int'",
+					"'-Werror=implicit-function-declaration'",
+					"-Wdouble-promotion",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = " /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-alloc.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-backend.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-quants.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-metal.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ggml_static;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		84C399CF67AC49C09EB53A34 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		8F09522A66174E798DA58440 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wpointer-arith",
+					"-Wmissing-prototypes",
+					"'-Werror=implicit-int'",
+					"'-Werror=implicit-function-declaration'",
+					"-Wdouble-promotion",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = " /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-alloc.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-backend.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-quants.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-metal.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ggml_static;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		968C96F8A95B4F338607EDCA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/david/Project/llamaFramework/llama.cppSrc/ios/common/llama.cpp.build/RelWithDebInfo/common.build/;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/david/Project/llamaFramework/llama.cppSrc/common/.,
+					/Users/david/Project/llamaFramework/llama.cppSrc/.,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wmissing-declarations",
+					"-Wmissing-noreturn",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"-Wmissing-prototypes",
+					"-Wextra-semi",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = common;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		9BA982BDCEB4493EBF46E933 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = BUILD_INFO;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		9C5649A462B74EB78B154CF9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/david/Project/llamaFramework/llama.cppSrc/ios/common/llama.cpp.build/MinSizeRel/common.build/;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/david/Project/llamaFramework/llama.cppSrc/common/.,
+					/Users/david/Project/llamaFramework/llama.cppSrc/.,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wmissing-declarations",
+					"-Wmissing-noreturn",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"-Wmissing-prototypes",
+					"-Wextra-semi",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = common;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios/common;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		B580F2BD7F214B919E143069 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		B62DE7B5640F42D3A679AF9C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		C699F6230EBD4734A3F96D4F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		C751E811E6A048A8A07E55DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk;
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios/build;
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = Debug;
+		};
+		C79433BE01974902BDC35A53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		CB6731078A1F4CAD9D4ABF51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = BUILD_INFO;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		D3E7BC73C9F14BDEB35D5B21 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk;
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios/build;
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = MinSizeRel;
+		};
+		DBEEB7B18B464F05B09B5CD6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		DF29839A3DA84F7DB192BDBA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/david/Project/llamaFramework/llama.cppSrc/.,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wpointer-arith",
+					"-Wmissing-prototypes",
+					"'-Werror=implicit-int'",
+					"'-Werror=implicit-function-declaration'",
+					"-Wdouble-promotion",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wmissing-declarations",
+					"-Wmissing-noreturn",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"-Wmissing-prototypes",
+					"-Wextra-semi",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-alloc.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-backend.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-quants.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-metal.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = llama;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		E42B4ACF175A4A97B54B09B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = BUILD_INFO;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		E85105B260CB4061BAFB01D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		EB8E60E2F9E243A1A0A7333E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		ED868D6E59AC4E28B736DFDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/david/Project/llamaFramework/llama.cppSrc/.,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wpointer-arith",
+					"-Wmissing-prototypes",
+					"'-Werror=implicit-int'",
+					"'-Werror=implicit-function-declaration'",
+					"-Wdouble-promotion",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wmissing-declarations",
+					"-Wmissing-noreturn",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"-Wmissing-prototypes",
+					"-Wextra-semi",
+					"'-std=gnu++11'",
+				);
+				OTHER_LIBTOOLFLAGS = " /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-alloc.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-backend.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-quants.o /Users/david/Project/llamaFramework/llama.cppSrc/ios/$(PROJECT_NAME).build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ggml.build/$(OBJECT_FILE_DIR_normal:base)/$(CURRENT_ARCH)/ggml-metal.o";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = llama;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		F18159E6B0444779BD521FA2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/david/Project/llamaFramework/llama.cppSrc/ios/llama.cpp.build/MinSizeRel/ggml.build/;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/david/Project/llamaFramework/llama.cppSrc/.,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wpointer-arith",
+					"-Wmissing-prototypes",
+					"'-Werror=implicit-int'",
+					"'-Werror=implicit-function-declaration'",
+					"-Wdouble-promotion",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ggml;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		F7A6A49B6F204FFDABA187E1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk;
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios/build;
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = RelWithDebInfo;
+		};
+		F7DFFBE90BEB4CCE8DC2B770 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/david/Project/llamaFramework/llama.cppSrc/ios/llama.cpp.build/Debug/ggml.build/;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					GGML_USE_ACCELERATE,
+					ACCELERATE_NEW_LAPACK,
+					ACCELERATE_LAPACK_ILP64,
+					GGML_USE_METAL,
+					"'_XOPEN_SOURCE=600'",
+					_DARWIN_C_SOURCE,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/david/Project/llamaFramework/llama.cppSrc/.,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wshadow",
+					"-Wstrict-prototypes",
+					"-Wpointer-arith",
+					"-Wmissing-prototypes",
+					"'-Werror=implicit-int'",
+					"'-Werror=implicit-function-declaration'",
+					"-Wdouble-promotion",
+					"-Wall",
+					"-Wextra",
+					"-Wpedantic",
+					"-Wcast-qual",
+					"-Wno-unused-function",
+					"-Wunreachable-code-break",
+					"-Wunreachable-code-return",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ggml;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/david/Project/llamaFramework/llama.cppSrc/ios;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F3B3BDDBD174C768FA1E457 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E85105B260CB4061BAFB01D5 /* Debug */,
+				651370F5F01144AEAFEA1848 /* Release */,
+				478AB6F252EE442099D920BA /* MinSizeRel */,
+				C699F6230EBD4734A3F96D4F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1B654A2E461B4846B685E80D /* Build configuration list for PBXAggregateTarget "BUILD_INFO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E42B4ACF175A4A97B54B09B5 /* Debug */,
+				CB6731078A1F4CAD9D4ABF51 /* Release */,
+				6A2DD216EE0843EF82D32076 /* MinSizeRel */,
+				9BA982BDCEB4493EBF46E933 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4786EE56111B4F79B33417EB /* Build configuration list for PBXNativeTarget "llama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4171F298DC934E09A606FC68 /* Debug */,
+				ED868D6E59AC4E28B736DFDE /* Release */,
+				DF29839A3DA84F7DB192BDBA /* MinSizeRel */,
+				659DF0F0877E448AAF76C1CD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5B67267D468941EC8CC77607 /* Build configuration list for PBXNativeTarget "common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E748218D1C543139B1B5314 /* Debug */,
+				453727EC4C8B43AD8DFDF25A /* Release */,
+				9C5649A462B74EB78B154CF9 /* MinSizeRel */,
+				968C96F8A95B4F338607EDCA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		63E836622AEF60F8008EF2E2 /* Build configuration list for PBXNativeTarget "llamaFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E8365E2AEF60F8008EF2E2 /* Debug */,
+				63E8365F2AEF60F8008EF2E2 /* Release */,
+				63E836602AEF60F8008EF2E2 /* MinSizeRel */,
+				63E836612AEF60F8008EF2E2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		797A70ACAA5E4D6C95DAF732 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51527C9E97B94DBEA87617FC /* Debug */,
+				B580F2BD7F214B919E143069 /* Release */,
+				84C399CF67AC49C09EB53A34 /* MinSizeRel */,
+				EB8E60E2F9E243A1A0A7333E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BBA6113A051D45E5812BDF0D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4216F0ADE49B4B8CB007A54C /* Debug */,
+				C79433BE01974902BDC35A53 /* Release */,
+				DBEEB7B18B464F05B09B5CD6 /* MinSizeRel */,
+				B62DE7B5640F42D3A679AF9C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E76ADD81790E40D9B57CA549 /* Build configuration list for PBXNativeTarget "ggml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DFFBE90BEB4CCE8DC2B770 /* Debug */,
+				67AE425DADAE4AF887054099 /* Release */,
+				F18159E6B0444779BD521FA2 /* MinSizeRel */,
+				45F804B7ED14470D84F48F48 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F3D1845DE8074924AB3E6D2D /* Build configuration list for PBXNativeTarget "ggml_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2610C13DE4894354881EDB27 /* Debug */,
+				2EA5B6004ACB4EC9A90F1710 /* Release */,
+				834C348E978845589716641A /* MinSizeRel */,
+				8F09522A66174E798DA58440 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F72E2A2864274BB5A5D839EF /* Build configuration list for PBXProject "llama.cpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C751E811E6A048A8A07E55DD /* Debug */,
+				12E0579858324EAC897A649F /* Release */,
+				D3E7BC73C9F14BDEB35D5B21 /* MinSizeRel */,
+				F7A6A49B6F204FFDABA187E1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9D745DDDF744CD0A5416BA0 /* Project object */;
+}

@@ -25,6 +25,7 @@
 
 #define GGML_MAX_CONCUR (2*GGML_MAX_NODES)
 
+//#define TARGET_OS_OSX true
 struct ggml_metal_buffer {
     const char * name;
 
@@ -241,7 +242,7 @@ struct ggml_metal_context * ggml_metal_init(int n_cb) {
 #define GGML_METAL_ADD_KERNEL(name) \
         ctx->function_##name = [ctx->library newFunctionWithName:@"kernel_"#name]; \
         ctx->pipeline_##name = [ctx->device newComputePipelineStateWithFunction:ctx->function_##name error:&error]; \
-        GGML_METAL_LOG_INFO("%s: loaded %-32s %16p | th_max = %4d | th_width = %4d\n", __func__, "kernel_"#name, (void *) ctx->pipeline_##name, \
+        GGML_METAL_LOG_INFO("%s: loaded %-32s %16p | th_max = %4d | th_width = %4d\n", __func__, "kernel_"#name, (__bridge void *) ctx->pipeline_##name, \
                 (int) ctx->pipeline_##name.maxTotalThreadsPerThreadgroup, \
                 (int) ctx->pipeline_##name.threadExecutionWidth); \
         if (error) { \
@@ -344,6 +345,7 @@ struct ggml_metal_context * ggml_metal_init(int n_cb) {
 
 void ggml_metal_free(struct ggml_metal_context * ctx) {
     GGML_METAL_LOG_INFO("%s: deallocating\n", __func__);
+#if TARGET_OS_OSX
 #define GGML_METAL_DEL_KERNEL(name) \
     [ctx->function_##name release]; \
     [ctx->pipeline_##name release];
@@ -414,6 +416,7 @@ void ggml_metal_free(struct ggml_metal_context * ctx) {
 
 #undef GGML_METAL_DEL_KERNEL
 
+
     for (int i = 0; i < ctx->n_buffers; ++i) {
         [ctx->buffers[i].metal release];
     }
@@ -423,7 +426,7 @@ void ggml_metal_free(struct ggml_metal_context * ctx) {
     [ctx->device release];
 
     dispatch_release(ctx->d_queue);
-
+#endif
     free(ctx);
 }
 
