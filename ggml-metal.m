@@ -199,7 +199,8 @@ struct ggml_metal_context * ggml_metal_init(int n_cb) {
 #ifdef SWIFT_PACKAGE
         bundle = SWIFTPM_MODULE_BUNDLE;
 #else
-        bundle = [NSBundle bundleForClass:[GGMLMetalClass class]];
+        //bundle = [NSBundle bundleForClass:[GGMLMetalClass class]];
+        bundle = [NSBundle mainBundle];
 #endif
         NSError * error = nil;
         NSString * libPath = [bundle pathForResource:@"default" ofType:@"metallib"];
