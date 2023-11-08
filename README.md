@@ -1,5 +1,10 @@
 # llama.cpp
 
+This is a fork from the original llama.cpp. The reason behind the fork is to create a code base of llama.cpp that is suited for porting to other platforms. If you are interested in keep this fork upto date please contact me.
+
+I am building a swift framework for Apple development enviroment that is easy to be integrated and used in any iOS and MacOS app. The farmework will act as a bridge between llama.cpp and swift apps. 
+
+
 ![llama](https://user-images.githubusercontent.com/1991296/230134379-7181e485-c521-4d23-a0d6-f7b3b61ba524.png)
 
 [![Actions Status](https://github.com/ggerganov/llama.cpp/workflows/CI/badge.svg)](https://github.com/ggerganov/llama.cpp/actions)
