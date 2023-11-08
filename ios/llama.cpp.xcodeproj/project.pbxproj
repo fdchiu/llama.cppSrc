@@ -71,8 +71,6 @@
 		6302AE702AF406D00032F9A5 /* ggml-metal.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6302AE6F2AF406D00032F9A5 /* ggml-metal.metal */; };
 		636387C72AF5590600157A01 /* llamaMacOS.docc in Sources */ = {isa = PBXBuildFile; fileRef = 636387C62AF5590600157A01 /* llamaMacOS.docc */; };
 		636387C82AF5590600157A01 /* llamaMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 636387C52AF5590600157A01 /* llamaMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		636387CB2AF5590600157A01 /* llamaMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636387C32AF5590600157A01 /* llamaMacOS.framework */; };
-		636387CC2AF5590600157A01 /* llamaMacOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 636387C32AF5590600157A01 /* llamaMacOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		636387D32AF55D0000157A01 /* ggml-alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 38A0A0C607BF43A2A4F18E9D /* ggml-alloc.c */; };
 		636387D42AF55D0000157A01 /* ggml-backend.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A48071CE30B4C0DA05F1125 /* ggml-backend.c */; };
 		636387D52AF55D0000157A01 /* ggml-metal.m in Sources */ = {isa = PBXBuildFile; fileRef = 822C35311240446EAF3BDDE1 /* ggml-metal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -85,6 +83,7 @@
 		636387DC2AF55D1600157A01 /* sampling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B339537782DA48F9B6BFAAAA /* sampling.cpp */; };
 		636387DD2AF55D1600157A01 /* train.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 179AD1112E7742A293B41D44 /* train.cpp */; };
 		636387DE2AF55D2C00157A01 /* build-info.h in Sources */ = {isa = PBXBuildFile; fileRef = 63E836762AEF6351008EF2E2 /* build-info.h */; };
+		6376BCFC2AF892E2002257A2 /* llamaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E836582AEF60F8008EF2E2 /* llamaFramework.framework */; };
 		6397A43E89C24F5A8A376D16 /* llama.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA3077B3FD894FE2851F4104 /* llama.cpp */; };
 		63E8365C2AEF60F8008EF2E2 /* llamaFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = 63E8365B2AEF60F8008EF2E2 /* llamaFramework.docc */; };
 		63E8365D2AEF60F8008EF2E2 /* llamaFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E8365A2AEF60F8008EF2E2 /* llamaFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -136,12 +135,12 @@
 			remoteGlobalIDString = EFCB450869CE431B96CD0497;
 			remoteInfo = ggml;
 		};
-		636387C92AF5590600157A01 /* PBXContainerItemProxy */ = {
+		6376BCFA2AF892DA002257A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E9D745DDDF744CD0A5416BA0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 636387C22AF5590600157A01;
-			remoteInfo = llamaMacOS;
+			remoteGlobalIDString = 63E836572AEF60F8008EF2E2;
+			remoteInfo = llamaFramework;
 		};
 		66226E612F04487999B58AA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -236,20 +235,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		636387D22AF5590600157A01 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				636387CC2AF5590600157A01 /* llamaMacOS.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		077C64D103D24C6D8735FA1F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 		179AD1112E7742A293B41D44 /* train.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = train.cpp; path = common/train.cpp; sourceTree = SOURCE_ROOT; };
@@ -339,7 +324,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				636387CB2AF5590600157A01 /* llamaMacOS.framework in Frameworks */,
+				6376BCFC2AF892E2002257A2 /* llamaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,12 +664,11 @@
 				63E836782AF00B4D008EF2E2 /* Sources */,
 				63E836792AF00B4D008EF2E2 /* Frameworks */,
 				63E8367A2AF00B4D008EF2E2 /* Resources */,
-				636387D22AF5590600157A01 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				636387CA2AF5590600157A01 /* PBXTargetDependency */,
+				6376BCFB2AF892DA002257A2 /* PBXTargetDependency */,
 			);
 			name = LlamaExample;
 			productName = LlamaExample;
@@ -1041,10 +1025,10 @@
 			target = CE3ECBF67F8E44ACB858719B /* ZERO_CHECK */;
 			targetProxy = 1AE5BD2BAA68460E8C7E9295 /* PBXContainerItemProxy */;
 		};
-		636387CA2AF5590600157A01 /* PBXTargetDependency */ = {
+		6376BCFB2AF892DA002257A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 636387C22AF5590600157A01 /* llamaMacOS */;
-			targetProxy = 636387C92AF5590600157A01 /* PBXContainerItemProxy */;
+			target = 63E836572AEF60F8008EF2E2 /* llamaFramework */;
+			targetProxy = 6376BCFA2AF892DA002257A2 /* PBXContainerItemProxy */;
 		};
 		6DB2C5E9555E45378617CCFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2298,6 +2282,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2320,7 +2305,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2383,6 +2368,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2399,7 +2385,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2461,6 +2447,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2477,7 +2464,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2539,6 +2526,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = ../;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2555,7 +2543,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
